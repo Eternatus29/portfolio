@@ -53,6 +53,24 @@
     top: 1rem;
 }
 
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.flicker-animation {
+    animation: flicker 1s infinite;
+}
+
 .home_description {
     max-width: 400px;
     margin-bottom: var(--mb-3);
